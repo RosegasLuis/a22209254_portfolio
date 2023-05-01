@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+header{
+    height: 10vh;
+    background: black;
+    color:  white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: block;
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+main{
+    height: 90vh;
+    background-image: url(https://photos.google.com/search/flores/photo/AF1QipOoUT6-JFBTW5BIaM14AghqpplY9ywkCCvR8e7h);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+main>p{
+    font-size: 3rem;
+}
+article.primeiro{
+    height: 90vh;
+    background: orange;
+    padding: 0 4vh;
+    text-align: center;
+    font-size: 2rem;
+}
+article.segundo{
+    height: 80vh;
+    background-image: url( https://www.istockphoto.com/br/foto/neve-de-ver%C3%A3o-eterna-gm1465878476-498154717 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-items:start;
+}
+footer{
+    height: 10vh;
+    background: black 
+}
+
