@@ -1,59 +1,86 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0; 
+  margin: 10;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
+body > * {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
 }
-header{
-    height: 10vh;
-    background: black;
-    color:  white;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-}
-nav{
-    display: block;
-    padding: 0 1em;
-    text-decoration: none;
-    font-size: 1rem;
-    color: white;
-}
-main{
-    height: 90vh;
-    background-image: url(https://photos.google.com/search/flores/photo/AF1QipOoUT6-JFBTW5BIaM14AghqpplY9ywkCCvR8e7h);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
-}
-main>p{
-    font-size: 3rem;
-}
-article.primeiro{
-    height: 90vh;
-    background: orange;
-    padding: 0 4vh;
-    text-align: center;
-    font-size: 2rem;
-}
-article.segundo{
-    height: 80vh;
-    background-image: url( https://www.istockphoto.com/br/foto/neve-de-ver%C3%A3o-eterna-gm1465878476-498154717 );
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    align-items:start;
-}
-footer{
-    height: 10vh;
-    background: black 
+.dark-mode {
+  background-color: black;
+  color: rgb(7, 3, 3);
 }
 
+header {
+  height: 10vh; 
+  background:burlywood;
+  color: black ;
+  top: 0; 
+  display:flex;
+  justify-content: space-between; 
+  align-items:left; 
+  box-shadow: 0.5px 0.5px 10px 0.5px #000;
+  color:#fff
+  padding:1rem 2rem; 
+  position: static;
+}
+
+.dark,
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+nav {
+  display:flex;
+  justify-contents: flex-end; 
+
+}
+nav a {
+  display:block;
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white 
+}
+main {
+  height: 90vh;
+  background-image: url("https://lh3.googleusercontent.com/pw/AJFCJaWqdFjo-lzbdqFBwKaW5gMIZwXHGP1Ez4hm4Pcb33ZTI9ixNF1QBr-alFlaA6aHl9MPe9dN6GF5ApnhAw0DecrsjI1m681tzfLBoL7n4T0f5I7-en3UMD2_2igJ2Qz0QPVbzDbdKFqhO8atKmdG8zFwtaPp8WDKZBKhpmuH3GAJXj36Q_Jrr4UBWL2RIC5v-k22qyleQaXS3zhT2G7trhuCY9-zXPl4ePi36iobx_rZQLoSYyUKUtPzXU3NKD3RuEzCZz1j_6bfqc67JQ_P85afV8AYCV_df_2KB6hzAl-YzlD_jmRgUrm3ccsDR9j7dVr5S78hgz2zu-gCtqXPaVJC_U9TI0Gujg9Lq7ZZ1eldfZJay9fGoQ0ljTWq05lnwdgMZ5rda_8iEptctB3IzaaO_-UQpo98Llu_Q8i-m5VD6GKxqvWRlvtg6XNFRelkPCS0jeSQLNmZ09sAu83hAgFwQTAnyqEKGjMDBVu6gcdtKHWtwh7eO9wQ5zmtaZ7ocIhQT7r_3bVa5rm8ebP_AecOlappbiW_xSQl3JSuaxa0t0cEBilifLEBuj5KamHbdTOWYN-5tPlSlx1mQAe_8BDU5ET23hxiTC--lDKthLO54NJYd1kYVQ6uX7KpGBiWWIPfkaVRngP3mpUaXqLgVp-22vKcd2KJvGgca-SLpVt3iuWEuif35PuRTpVHZa1Hu8WMju1bs5WA3a-wpMEJH3QxiXH86PfiPhXK7lCAQKzcX59evAKZ7eeZTZLp6Ws3iFNg5ImYNAf8STyTbf5GgYO03PVFahtosj1LJPbjdxx2u3m0Q2g1obHogxxXZukO2Z33vn3Uts4sfuGiXvLRuYgVoZrTl7zbgs3Xv2He3M-t8ViutSCPT82XC1xvlGENIhvUj-fOAteQR9TCD7nbeGb5UOc=w1190-h893-s-no?authuser=0");
+   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+main > p {
+  font-size: 3rem;
+}
+
+article.primeiro {
+  height: 90vh;
+  background: rgba(247, 198, 134, 0.12);
+  padding: 0 4vw;
+  text-align: center;
+  font-size: 2rem;
+}
+article.segundo {
+  height: 90vh;
+  background-image: url("https://lh3.googleusercontent.com/pw/AJFCJaWbOgPQqSfGOjOecN4AkCL0ap9x_dAXXnN3HF6SUgHEENz3cOp-ippWb5odhOg6g7bNsHNTngTTwTjwfQ_-DE1P9DBX1m0FXBHzI830CIfEuT8U91id1eyKFUIeMhjdLTkpT4WwNladR9o9R7Zb3nLtkCJyO036rnBYaNBwZosIL4G_AotqxrL5OVhzn1RFd2xq4mjBETR6JX6f3iN-yDcjeRvJKYxDfdbeiSiNCRWivsh7W_OjSED-7UJWq5YoM6aSxWoKhLuQ6pSx7V0wszOR8iSZvANm4PEFrPvpbx_wq7uZWDZxy1E-lTHfCi48bnSq-f09B9Uj3p0oDnGiVeUghloczGgZ5COTYeuXWT22d8-mk3_4QaM10K2vTKayBBAFxqO6-F34aBViox1l4kpKHyfHQmQWXWyWBLXxF_07QoJHk2xz_9X_SEb2bpxmRf-i8VtLMKbQDD0w0AhynEVc6llxgOVtV8GDxWnLEyYvNfGSiGOQaD4tY0XeDogivVaD1ghz86tWdepkA778Lz4viMFuXTmhfAr_88u2A8rMtaTGCc5WCJ-4BH5ozkuBfxx9QulfBXNOCHS5Dk7R4d3537kNVcwBLmPe9KqBvz7EqhBNsw_wkRFyCmttTAH2AsOcP0mAgRA2cQJghu9nIAq45HcJGtZgjW1ZVt45DjnTHQjNE_qEXpo48x93hMXlbahAHkREFm_vwMJDFQuoW-7amBBpLiIMuMB4JEXN7fv2WtnZmh8h-LMvWG06sIDjfUA8-5jNFqJNc7gzV6V9GuXV1fNMwQFaMp4IrDevGbT01YwxIlb5Ea-q36D5sbGtqommfySCD-QU9xBJUHGuOQHOaV7GJfnPdY9DtlUhAVy42JR1PnOpDDTVD6kAr34wsab4CMvhjYPOsbTpY_Yp0LLO_Ag=w670-h893-s-no?authuser=0");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  align-items: start;
+}
+footer {
+  height: 10vh;
+  background: black;
+  color: white;
+}
